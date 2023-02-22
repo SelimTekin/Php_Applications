@@ -8,4 +8,12 @@
         die();
     }
 
+    function filtre($deger){
+        $bir   = trim($deger);
+        $iki   = strip_tags($bir);
+        $uc    = htmlspecialchars($iki);
+        $sonuc = $uc;
+
+        return $sonuc;
+    }
 ?>
